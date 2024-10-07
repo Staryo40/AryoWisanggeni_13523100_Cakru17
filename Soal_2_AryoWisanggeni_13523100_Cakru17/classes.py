@@ -71,6 +71,7 @@ class Robot:
         if (type(self.passive).__name__ == "LastUpgrade"):
             self.passive.active = True
 
+# Class that has method to start robot battle
 class Battle:
     def __init__(self, robot1, robot2):
         self.robot1 = robot1
@@ -167,6 +168,7 @@ class Battle:
 
         out = input("Press enter to go back to main page.")
 
+# Class that has methods for game features
 class Game:
     def __init__(self, robotList, exit):
         self.robotList = robotList
