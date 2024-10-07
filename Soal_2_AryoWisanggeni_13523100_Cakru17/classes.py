@@ -232,7 +232,7 @@ class Game:
         if (newPassive == "speed malfunction"):
             newRobot = Robot(newName, newMaxHP, newAttackPower, newSpeed, SpeedMalfunction())
         if (newPassive == "last upgrade"):
-            attack_multi = int(input("Enter attack multiplication value: "))
+            attack_multi = float(input("Enter attack multiplication value: "))
             newRobot = Robot(newName, newMaxHP, newAttackPower, newSpeed, LastUpgrade(attack_multi))
 
         self.robotList.append(newRobot)
